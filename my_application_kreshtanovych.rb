@@ -1,32 +1,53 @@
-module Music_parser_tool
-  class User
-    attr_accessor :login, :password
+require 'singleton'
+require 'pony'
 
-    def initialize(login, password)
-      @login = login
-      @password = password
-    end
-  end
+module MusicParserTool
+  class MyApplicationKreshtanovych
+    include Singleton
 
-  class << self
     attr_accessor :web_address, :validator, :file_ext, :parse_item, :user
 
+    def initialize
+      # Set default values
+      @web_address = "https://muzflix.net/sborniki/ukrainian-top-100"
+      @validator = lambda { |min, max| min <= max }
+      @file_ext = [".txt", ".json", ".csv",".yaml"]
+      @parse_item = %i[title download_link listens group likes]
+      @user = User.new
+    end
+
     def configure
-      self.web_address = "https://meloua.com/popular"
-      self.validator = lambda { |min, max| (min..max).cover?(10) } # Приклад валідатора
-      self.file_ext = [".rb"]
-      self.parse_item = /\d{2}-\d{2}-\d{4}/ # Приклад регулярного виразу
-      self.user = User.new("krokodile408@gmail.com", "123456789_qQ") # Приклад об'єкта користувача
-      yield(self)
+      yield(self) if block_given?
+    end
+
+    def to_config
+      <<~CONFIG
+        Web Address: #{@web_address}
+        Validator: #{@validator}
+        File Extensions: #{@file_ext}
+        Parse Item Regex: #{@parse_item}
+        User: #{user.to_s}
+      CONFIG
+    end
+  end
+
+  class User
+    attr_accessor :email, :password
+
+    def to_s
+      "Email: #{@email}, Password: #{@password}"
     end
   end
 end
 
-# Налаштування додатку
-Music_parser_tool.configure do |config|
-  config.web_address = "https://meloua.com/popular"
-  config.validator = lambda { |min, max| (min..max).cover?(10) } # Приклад валідатора
-  config.file_ext = [".rb"]
-  config.parse_item = /\d{2}-\d{2}-\d{4}/
-  config.user = Music_parser_tool::User.new("krokodile408@gmail.com", "123456789_qQ") # Приклад об'єкта користувача
+MusicParserTool::MyApplicationKreshtanovych.instance.configure do |config|
+  config.web_address = "https://muzflix.net/sborniki/ukrainian-top-100"
+  config.validator = lambda { |min, max| min <= max }
+  config.file_ext = [".txt", ".json", ".csv",".yaml"]
+  config.parse_item = %i["title", "download_link", "listens", "group", "likes"]
+
+  config.user.email = "krokodile408@gmail.com"
+  config.user.password = "123456789_qQ"
 end
+
+puts MusicParserTool::MyApplicationKreshtanovych.instance.to_config

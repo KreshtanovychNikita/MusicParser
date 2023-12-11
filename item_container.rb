@@ -30,6 +30,14 @@ module ItemContainer
       end
     end
 
+    def remove_item(item)
+      @items.delete(item)
+    end
+
+    def delete_items
+      @items.clear
+    end
+
     # Підрахунок загальної кількості елементів в контейнері
     def total_items
       @items.size
@@ -41,6 +49,27 @@ module ItemContainer
         items: @items.map(&:format_not_for_file),
         QTY: total_items,
       }
+    end
+
+    def method_missing(method_name, *arguments, &block)
+      if method_name.to_s.start_with?('show_all_items_by_')
+        attribute = method_name.to_s[18..-1]
+        define_show_all_items_by(attribute)
+        send(method_name, *arguments, &block)
+      else
+        super
+      end
+    end
+
+    private
+
+    def define_show_all_items_by(attribute)
+      self.class.class_eval do
+        define_method(attribute) do
+          puts "Showing all items by title:"
+          puts @items.map { |item| item.title }.join("\n")
+        end
+      end
     end
   end
 end

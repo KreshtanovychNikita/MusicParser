@@ -32,7 +32,7 @@ module Music_parser_tool
           puts "Export Error"
         end
       end
-      Music_parser_tool::Zipper.create_archive()
     end
+
   end
 end

@@ -11,7 +11,7 @@ require 'logger'
 require 'thread'
 
 require_relative 'config'
-require_relative 'my_application_kreshtanovych'
+# require_relative 'my_application_kreshtanovych'
 require_relative 'init'
 require_relative "item_container"
 require_relative "item"
