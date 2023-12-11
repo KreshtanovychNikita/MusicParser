@@ -14,12 +14,6 @@ module Music_parser_tool
 
     end
 
-    private
-
-    def send_archive
-      # Pony.mail({
-                  # TODO: smtp
-    end
   end
 end
 

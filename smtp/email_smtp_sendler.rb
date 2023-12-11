@@ -9,7 +9,7 @@ Pony.mail({
               :port                 => '587',
               :enable_starttls_auto => true,
               :user_name            => 'krokodile408@gmail.com',
-              :password             => '0992403922qQ',
+              :password             => 'pass',
               :authentication       => :plain,
               :return_response => true,
               # :domain               => "localhost.localdomain"

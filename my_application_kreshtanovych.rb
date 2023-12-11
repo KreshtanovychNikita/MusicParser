@@ -1,4 +1,3 @@
-# my_application_kreshtanovych.rb
 module Music_parser_tool
   class User
     attr_accessor :login, :password
