@@ -3,6 +3,7 @@ Music_parser_tool.configure do |music_parser_tool|
     music_parser_tool.numbers = 50
     music_parser_tool.path = "#{__dir__}/export_data_files"
     music_parser_tool.file_ext = [".txt", ".json", ".csv",".yaml"]
+    music_parser_tool.path_to_zip ="#{__dir__}/zip_file/data.zip"
 
 
     music_parser_tool.login do |login|

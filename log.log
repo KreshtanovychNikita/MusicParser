@@ -1,0 +1,72 @@
+I, [2023-12-11T01:26:37.232247 #1147278]  INFO -- : Net::HTTP::Get: /
+I, [2023-12-11T01:26:37.632864 #1147278]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+I, [2023-12-11T01:26:37.665553 #1147278]  INFO -- : form encoding: utf-8
+I, [2023-12-11T01:26:37.665835 #1147278]  INFO -- : Net::HTTP::Get: /search?q=
+I, [2023-12-11T01:26:38.764835 #1147278]  INFO -- : status: Net::HTTPFound 1.1 302 Found
+I, [2023-12-11T01:26:38.765549 #1147278]  INFO -- : follow redirect to: https://meloua.com
+I, [2023-12-11T01:26:38.765854 #1147278]  INFO -- : Net::HTTP::Get: /
+I, [2023-12-11T01:26:42.962056 #1147278]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+I, [2023-12-11T01:31:55.478328 #1154374]  INFO -- : Net::HTTP::Get: /login
+I, [2023-12-11T01:31:56.390805 #1154374]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+I, [2023-12-11T01:31:56.421291 #1154374]  INFO -- : form encoding: utf-8
+I, [2023-12-11T01:31:56.421633 #1154374]  INFO -- : Net::HTTP::Get: /search?q=
+I, [2023-12-11T01:31:56.597203 #1154374]  INFO -- : status: Net::HTTPFound 1.1 302 Found
+I, [2023-12-11T01:31:56.598050 #1154374]  INFO -- : follow redirect to: https://meloua.com
+I, [2023-12-11T01:31:56.598395 #1154374]  INFO -- : Net::HTTP::Get: /
+I, [2023-12-11T01:31:56.939779 #1154374]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+I, [2023-12-11T02:02:57.693446 #1196942]  INFO -- : Net::HTTP::Get: /login
+I, [2023-12-11T02:02:57.990048 #1196942]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+I, [2023-12-11T02:02:58.021880 #1196942]  INFO -- : form encoding: utf-8
+I, [2023-12-11T02:02:58.022112 #1196942]  INFO -- : Net::HTTP::Get: /search?q=
+I, [2023-12-11T02:02:58.518224 #1196942]  INFO -- : status: Net::HTTPFound 1.1 302 Found
+I, [2023-12-11T02:02:58.518750 #1196942]  INFO -- : follow redirect to: https://meloua.com
+I, [2023-12-11T02:02:58.519029 #1196942]  INFO -- : Net::HTTP::Get: /
+I, [2023-12-11T02:02:58.769864 #1196942]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+I, [2023-12-11T02:03:57.018931 #1198202]  INFO -- : Net::HTTP::Get: /login
+I, [2023-12-11T02:03:57.964443 #1198202]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+I, [2023-12-11T02:03:58.002556 #1198202]  INFO -- : form encoding: utf-8
+I, [2023-12-11T02:03:58.002807 #1198202]  INFO -- : Net::HTTP::Get: /search?q=
+I, [2023-12-11T02:03:58.170102 #1198202]  INFO -- : status: Net::HTTPFound 1.1 302 Found
+I, [2023-12-11T02:03:58.171260 #1198202]  INFO -- : follow redirect to: https://meloua.com
+I, [2023-12-11T02:03:58.171775 #1198202]  INFO -- : Net::HTTP::Get: /
+I, [2023-12-11T02:03:58.474119 #1198202]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+I, [2023-12-11T02:04:07.738903 #1198449]  INFO -- : Net::HTTP::Get: /login
+I, [2023-12-11T02:04:08.022701 #1198449]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+I, [2023-12-11T02:04:08.054213 #1198449]  INFO -- : form encoding: utf-8
+I, [2023-12-11T02:04:08.054515 #1198449]  INFO -- : Net::HTTP::Get: /search?q=
+I, [2023-12-11T02:04:08.208324 #1198449]  INFO -- : status: Net::HTTPFound 1.1 302 Found
+I, [2023-12-11T02:04:08.209629 #1198449]  INFO -- : follow redirect to: https://meloua.com
+I, [2023-12-11T02:04:08.210242 #1198449]  INFO -- : Net::HTTP::Get: /
+I, [2023-12-11T02:04:08.403004 #1198449]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+I, [2023-12-11T02:06:46.697782 #1201817]  INFO -- : Net::HTTP::Get: /login
+I, [2023-12-11T02:06:46.983368 #1201817]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+I, [2023-12-11T02:06:47.032705 #1201817]  INFO -- : form encoding: utf-8
+I, [2023-12-11T02:06:47.033026 #1201817]  INFO -- : Net::HTTP::Get: /search?q=
+I, [2023-12-11T02:06:48.055213 #1201817]  INFO -- : status: Net::HTTPFound 1.1 302 Found
+I, [2023-12-11T02:06:48.056337 #1201817]  INFO -- : follow redirect to: https://meloua.com
+I, [2023-12-11T02:06:48.056846 #1201817]  INFO -- : Net::HTTP::Get: /
+I, [2023-12-11T02:06:48.244079 #1201817]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+I, [2023-12-11T02:07:02.141617 #1202155]  INFO -- : Net::HTTP::Get: /login
+I, [2023-12-11T02:07:02.412284 #1202155]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+I, [2023-12-11T02:07:02.441611 #1202155]  INFO -- : form encoding: utf-8
+I, [2023-12-11T02:07:02.442089 #1202155]  INFO -- : Net::HTTP::Get: /search?q=
+I, [2023-12-11T02:07:02.587823 #1202155]  INFO -- : status: Net::HTTPFound 1.1 302 Found
+I, [2023-12-11T02:07:02.588478 #1202155]  INFO -- : follow redirect to: https://meloua.com
+I, [2023-12-11T02:07:02.588758 #1202155]  INFO -- : Net::HTTP::Get: /
+I, [2023-12-11T02:07:02.815219 #1202155]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+I, [2023-12-11T02:14:42.255360 #1212101]  INFO -- : Net::HTTP::Get: /login
+I, [2023-12-11T02:14:42.735540 #1212101]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+I, [2023-12-11T02:14:42.772652 #1212101]  INFO -- : form encoding: utf-8
+I, [2023-12-11T02:14:42.772962 #1212101]  INFO -- : Net::HTTP::Get: /search?q=
+I, [2023-12-11T02:14:42.979392 #1212101]  INFO -- : status: Net::HTTPFound 1.1 302 Found
+I, [2023-12-11T02:14:42.980065 #1212101]  INFO -- : follow redirect to: https://meloua.com
+I, [2023-12-11T02:14:42.980407 #1212101]  INFO -- : Net::HTTP::Get: /
+I, [2023-12-11T02:14:43.178106 #1212101]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+I, [2023-12-11T02:19:33.070890 #1218333]  INFO -- : Net::HTTP::Get: /login
+I, [2023-12-11T02:19:33.366371 #1218333]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+I, [2023-12-11T02:19:33.399190 #1218333]  INFO -- : form encoding: utf-8
+I, [2023-12-11T02:19:33.399434 #1218333]  INFO -- : Net::HTTP::Get: /search?q=
+I, [2023-12-11T02:19:33.562416 #1218333]  INFO -- : status: Net::HTTPFound 1.1 302 Found
+I, [2023-12-11T02:19:33.563726 #1218333]  INFO -- : follow redirect to: https://meloua.com
+I, [2023-12-11T02:19:33.564321 #1218333]  INFO -- : Net::HTTP::Get: /
+I, [2023-12-11T02:19:33.811012 #1218333]  INFO -- : status: Net::HTTPOK 1.1 200 OK

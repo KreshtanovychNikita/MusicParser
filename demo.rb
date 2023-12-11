@@ -1,5 +1,6 @@
 require_relative 'libs'
 require 'benchmark'
+require_relative 'my_application_kreshtanovych'
 
 # Виміряємо час виконання
 time_elapsed = Benchmark.realtime do
