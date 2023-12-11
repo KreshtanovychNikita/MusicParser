@@ -33,6 +33,6 @@ module Music_parser_tool
         end
       end
     end
-
+    Parser_program::Zipper.create_archive()
   end
 end
